@@ -19,9 +19,9 @@ u3 = User.create!(first_name: "Vanessa", last_name: "Williamson", username: "Van
 v1 = Venue.create!(name: "Printworks", address: "10 Beaconsfield Terrace Road, London W14 0PP", venue_rules: "You will need to sign in at the reception and kind reception staff will issue you with a towel. You need to bring only your swimming suit and a good will for a great swim. The length of the swiiming pool is 25m", image: "http://olympia.co.uk/sites/default/files/styles/main_with_1_sidebar__mobile/public/37degrees_gym_olympia.jpg?itok=7I41wvxF")
 
 
-s1 = Swim.create!(title: "Fun, easy going swim", description: "Looking for up to five people to have a good fun easy pace swim for an hour", venue_id: v1.id, user_id: u1.id, startDate: "12/9/2017", endDate: "12/9/2017", created_by: "Josh")
-s2 = Swim.create!(title: "Intermediate swim", description: "We are going to motivate each other and complete 1.5mi swim in an hour", venue_id: v1.id, user_id: u2.id, startDate: "15/09/2017", endDate: "15/09/2017", created_by: "Sarah")
-s3 = Swim.create!(title: "Advanced level swim", description: "I am preparing for triathlon this is and looking to train with someone and have healthy competition with", venue_id: v1.id, user_id: u3.id, startDate: "", endDate: "", created_by: "Vanessa")
+s1 = Swim.create!(title: "Fun, easy going swim", description: "Looking for up to five people to have a good fun easy pace swim for an hour", venue_id: v1.id, user_id: u1.id, startDate: "12/9/2017 17:00", endDate: "12/9/2017 19:00", created_by: "Josh")
+s2 = Swim.create!(title: "Intermediate swim", description: "We are going to motivate each other and complete 1.5mi swim in an hour", venue_id: v1.id, user_id: u2.id, startDate: "15/09/2017 12:00", endDate: "15/09/2017 17:00", created_by: "Sarah")
+s3 = Swim.create!(title: "Advanced level swim", description: "I am preparing for triathlon this is and looking to train with someone and have healthy competition with", venue_id: v1.id, user_id: u3.id, startDate: "19/09/2017 12:00", endDate: "19/09/2017 19:00", created_by: "Vanessa")
 
 # create_table "swims", force: :cascade do |t|
 #   t.string "title"

@@ -46,6 +46,6 @@ class SwimsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def swim_params
-      params.require(:swim).permit(:title, :description, :startDate, :endDate, :venue_id, :user_id, :created_by)
+      params.require(:swim).permit(:title, :description, :startDate, :endDate, :venue_id, :created_by, user_ids: [])
     end
 end
